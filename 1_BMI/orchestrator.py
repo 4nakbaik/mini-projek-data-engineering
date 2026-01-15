@@ -1,7 +1,7 @@
 from etl import bmi_calcu, valid_data
 from io_utils import input_data, save_csv
 
-OUTPUT_FILE = "output/bmi_hasil.csv"
+OUTPUT_FILE = "1_BMI/output/bmi_hasil.csv"
 
 def main():
     data_raw = input_data()
@@ -13,7 +13,7 @@ def main():
         tb = row["tinggi_badan"]
         bb = row["berat_badan"]
         
-        if not valid_data(umur,tb,bb):
+        if not valid_data(nama,umur,tb,bb):
             continue
     
         bmi, kategori = bmi_calcu(tb,bb)

@@ -37,6 +37,6 @@ def save_csv(data,filepath):
     
     with open(filepath, "w", newline="", encoding= "utf-8") as file:
         writer = csv.DictWriter(file, fieldnames=fieldnames)
-        writer.writeheader
+        writer.writeheader()
         writer.writerows(data)
         
