@@ -1,3 +1,8 @@
+from config.setting import (
+    RAW_DATA_FILE, 
+    CLEAN_DATA_FILE, 
+    INVALID_DATA_FILE
+    )
 from etl import bmi_calcu, valid_data
 from io_utils import input_data, save_csv
 

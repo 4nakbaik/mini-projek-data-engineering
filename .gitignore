@@ -1,5 +1,40 @@
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
+*.pyd
+*.so
+
+# Virtual Environment
 venv/
+.env/
+.venv/
+
+# Logs
+logs/
+*.log
+
+# Data Files
+data/raw/
+data/processed/
+*.csv
+*.parquet
+
+# Output
+output/
+
+# Jupyter
+.ipynb_checkpoints/
+
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Infra
+*.pid
+*.sock
+
+# Secrets
 .env
+*.env
+config/*.yaml
